@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     background-color: #313131;
     color: #ffffff;
     background-image: url("../images/space.gif");
-    background-repeat:round;
+    background-size:contain;
 
 }
 
@@ -23,7 +24,51 @@ section {
     min-height: 400px;
 }
 
-header {
+.imagegrid{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 5px));
+    gap: 10px;
+    padding:10px;
+}
+
+.imagegrid img{
+     width: 100%; 
+     outline-style:solid;
+     outline-width: 3px;
+     outline-offset: -3px;
+     outline-color: gray;
+    /* height: 100%; */
+     /* object-fit: cover;  */
+
+    }
+
+
+.bottomheader{
+    padding-top: 10px;
+    margin-top: 20px;
+    top: 0;
+    height: 7.5vh;
+    /* background-image: url(../images/matrix.gif); */
+    outline-style:solid;
+   outline-width: 3px;
+   outline-offset: -3px;
+   outline-color: #000000;
+
+   background-color: #222222;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.bottomheader p {
+    position:inherit;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+    font-size: 5vh;
+    color:aqua;
+}
+
+
+.topheader {
     position: sticky;
     top: 0;
     height: 7.5vh;
@@ -38,7 +83,9 @@ header {
     background-repeat: no-repeat;
 }
 
-header p {
+
+
+.topheader p {
     position:absolute;
     top: 50%;
     left: 50%;
@@ -47,12 +94,12 @@ header p {
     color:aqua;
 }
 
-header img {
+.topheader img {
     max-height: 5vh;
     margin: 0 5px;
 }
 
-header nav {
+.topheader nav {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -89,7 +136,7 @@ aside, main {
 
 aside {
     width: 25vw;
-    
+
     flex: 1.2 0 0;
     margin-left: 20px;
     margin-right: 10px;
@@ -108,7 +155,7 @@ aside {
     align-items: center;
     width: 50%;
     float:left;
-    
+
 }
 .leftaside figure img{
     border-radius: 50%;
@@ -170,13 +217,6 @@ main article ul {
     width: 100%;
 }
 
-.aboutMe div {
-    flex: 1 0 70%;
-}
-
-.aboutMe div img {
-    max-width: 25%;
-}
 
 .rightaside{
     /*flex: 1.2 1.2 0 ;*/
@@ -208,7 +248,7 @@ main article ul {
 }
 
 .rightaside td span{
-     display:block; 
+     display:block;
 }
 
 .se{
