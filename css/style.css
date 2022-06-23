@@ -1,11 +1,23 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Share+Tech+Mono&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap'); */
+@font-face {
+    font-family: 'MyWebFont2';
+ src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+  }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap'); */
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'MyWebFont2', Poppins, sans-serif;
     box-sizing: border-box;
+    line-height: 105%;
 }
 
 body {
@@ -29,6 +41,17 @@ section {
     grid-template-columns: repeat(2, calc(50% - 5px));
     gap: 10px;
     padding:10px;
+
+}
+
+.imagegrid p{
+    font-family: 'MyWebFont', Poppins, sans-serif;
+    height: 0px;
+    text-shadow: #000000;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000000;
+    text-size-adjust: 5%;
+
 }
 
 .imagegrid img{
@@ -36,11 +59,13 @@ section {
      outline-style:solid;
      outline-width: 3px;
      outline-offset: -3px;
-     outline-color: gray;
+     outline-color: darkgray;
     /* height: 100%; */
      /* object-fit: cover;  */
 
     }
+
+
 
 
 .bottomheader{
@@ -54,15 +79,16 @@ section {
    outline-offset: -3px;
    outline-color: #000000;
 
-   background-color: #222222;
+   background-color: #826D7E;
    background-size: cover;
    background-repeat: no-repeat;
 }
 
 .bottomheader p {
     position:inherit;
+    /* text-align: center; */
     text-align: center;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(0, -8%);
     font-size: 5vh;
     color:aqua;
 }
@@ -70,6 +96,7 @@ section {
 
 .topheader {
     position: sticky;
+    z-index: 999;
     top: 0;
     height: 7.5vh;
     /* background-image: url(../images/matrix.gif); */
@@ -78,7 +105,7 @@ section {
    outline-offset: -3px;
    outline-color: #000000;
 
-    background-color: #222222;
+    background-color: #826D7E;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -108,7 +135,7 @@ section {
 
 h1 {
     background-color: #000000;
-    color: #00fc3c;
+    color: aqua;
     padding: 5px 5px 5px 10x;
     margin-bottom: 5px;
     font-size: 3vh;
@@ -117,7 +144,7 @@ h1 {
 
 h2 {
     background-color: #000000;
-    color: #00fc3c;
+    color: aqua;
     padding: 5px 5px 5px 10px;
     margin-bottom: 20px;
     font-size: 2vh;
@@ -130,7 +157,7 @@ h2 {
 
 aside, main {
     padding: 10px;
-    background-color: #222222;
+    background-color: #9B8197;
     margin-top: 25px;
 }
 
@@ -210,13 +237,39 @@ main article ul {
 .aboutMe {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .aboutMe h1 {
     width: 100%;
 }
 
+.aboutMe table{
+    float:left;
+    max-width: inherit;
+    table-layout: fixed;
+}
+.aboutMe tr{
+    width: 100%;;
+}
+
+.aboutMe td:nth-child(1){
+    width: 25%;
+}
+.aboutMe td:nth-child(2){
+    width: 100%;
+}
+
+.aboutMe table img{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    
+    
+}
+.aboutMe table p{
+    width: 100%;
+}
 
 .rightaside{
     /*flex: 1.2 1.2 0 ;*/
@@ -252,20 +305,45 @@ main article ul {
 }
 
 .se{
-    background-color:#00fc3c;
+    background-color:gray;
     width: 100%;
 }
 .sse{
-    background-color:#00fc3c;
-    width: 80%;
+    background-color:gray;
+    width: 100%;
 }
 
 .sf{
-    background-color:#00fc3c;
-    width: 60%;
+    background-color:gray;
+    width: 100%;
 }
 
 .st{
-    background-color:#00fc3c;
-    width: 40%;
+    background-color:gray;
+    width: 100%;
+}
+
+.imagegrid p{
+    visibility: hidden;
+    display: none;
+    position:relative;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.imagegrid img:hover ~ p{
+    display: block;
+    visibility: visible;
+    color:white;
+    text-shadow: #000000;
+    background-color: #826D7E;
+}
+
+.imagegrid p:hover{
+    display: block;
+    visibility: visible;
+    color:white;
+    text-shadow: #000000;
+    background-color: #826D7E;
 }
