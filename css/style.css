@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Share+Tech+Mono&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap'); */
 @font-face {
     font-family: 'MyWebFont2';
  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
@@ -22,10 +22,11 @@
 
 body {
     padding-bottom: 20px;
-    background-color: #313131;
+    /* background-color: #313131; */
     color: #ffffff;
-    background-image: url("../images/space.gif");
-    background-size:contain;
+    background-color: #000000;
+    /* background-image: url("../images/space.gif"); */
+    /* background-size:contain; */
 
 }
 
@@ -38,7 +39,7 @@ section {
 
 .imagegrid{
     display: grid;
-    grid-template-columns: repeat(2, calc(50% - 5px));
+    grid-template-columns: repeat(4, calc(25% - 5px));
     gap: 10px;
     padding:10px;
 
@@ -50,8 +51,6 @@ section {
     text-shadow: #000000;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #000000;
-    text-size-adjust: 5%;
-
 }
 
 .imagegrid img{
@@ -79,7 +78,7 @@ section {
    outline-offset: -3px;
    outline-color: #000000;
 
-   background-color: #826D7E;
+   background-color: rgb(34, 34, 34);
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -105,7 +104,8 @@ section {
    outline-offset: -3px;
    outline-color: #000000;
 
-    background-color: #826D7E;
+    /* background-color: #826D7E; */
+    background-color:rgb(34, 34, 34);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -134,8 +134,14 @@ section {
 }
 
 h1 {
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-image: url("/images/grit.gif");
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     color: aqua;
+
+    margin-top: 5px;
     padding: 5px 5px 5px 10x;
     margin-bottom: 5px;
     font-size: 3vh;
@@ -157,7 +163,8 @@ h2 {
 
 aside, main {
     padding: 10px;
-    background-color: #9B8197;
+     background-color: #3c396ebb;
+    /* background-image: url("/images/grit.gif"); */
     margin-top: 25px;
 }
 
@@ -323,13 +330,24 @@ main article ul {
     width: 100%;
 }
 
+.imagegrid{
+    padding-top: 30px;
+}
+
 .imagegrid p{
     visibility: hidden;
     display: none;
     position:relative;
-    top: -60%;
+    top: -80%; 
     left: 50%;
     transform: translate(-50%, 0%);
+
+    text-align: center;
+    font-size: 160%;
+}
+
+.imagegrid img:hover{
+    filter: brightness(0.3);
 }
 
 .imagegrid img:hover ~ p{
@@ -338,12 +356,11 @@ main article ul {
     color:white;
     text-shadow: #000000;
     background-color: #826D7E;
+    pointer-events: none;
+   
 }
 
-.imagegrid p:hover{
-    display: block;
-    visibility: visible;
-    color:white;
-    text-shadow: #000000;
-    background-color: #826D7E;
-}
+
+
+
+
