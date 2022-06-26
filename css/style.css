@@ -23,7 +23,7 @@
 body {
     padding-bottom: 20px;
     /* background-color: #313131; */
-    color: #ffffff;
+    color: lightgray;
     background-color: #000000;
     /* background-image: url("../images/space.gif"); */
     /* background-size:contain; */
@@ -55,10 +55,10 @@ section {
 
 .imagegrid img{
      width: 100%; 
-     outline-style:solid;
+     /* outline-style:solid;
      outline-width: 3px;
      outline-offset: -3px;
-     outline-color: darkgray;
+     outline-color: darkgray; */
     /* height: 100%; */
      /* object-fit: cover;  */
 
@@ -73,10 +73,10 @@ section {
     top: 0;
     height: 7.5vh;
     /* background-image: url(../images/matrix.gif); */
-    outline-style:solid;
+    /* outline-style:solid;
    outline-width: 3px;
    outline-offset: -3px;
-   outline-color: #000000;
+   outline-color: #000000; */
 
    background-color: rgb(34, 34, 34);
    background-size: cover;
@@ -89,7 +89,7 @@ section {
     text-align: center;
     transform: translate(0, -8%);
     font-size: 5vh;
-    color:aqua;
+    color:aquamarine;
 }
 
 
@@ -99,10 +99,10 @@ section {
     top: 0;
     height: 7.5vh;
     /* background-image: url(../images/matrix.gif); */
-    outline-style:solid;
+    /* outline-style:solid;
    outline-width: 3px;
    outline-offset: -3px;
-   outline-color: #000000;
+   outline-color: #000000; */
 
     /* background-color: #826D7E; */
     background-color:rgb(34, 34, 34);
@@ -118,7 +118,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5vh;
-    color:aqua;
+    color:aquamarine;
 }
 
 .topheader img {
@@ -136,10 +136,10 @@ section {
 h1 {
     /* background-color: #000000; */
     background-image: url("/images/grit.gif");
-    border-style: solid;
+    /* border-style: solid;
     border-width: 2px;
-    border-color: black;
-    color: aqua;
+    border-color: black; */
+    color: aquamarine;
 
     margin-top: 5px;
     padding: 5px 5px 5px 10x;
@@ -150,7 +150,7 @@ h1 {
 
 h2 {
     background-color: #000000;
-    color: aqua;
+    color: aquamarine;
     padding: 5px 5px 5px 10px;
     margin-bottom: 20px;
     font-size: 2vh;
@@ -163,7 +163,7 @@ h2 {
 
 aside, main {
     padding: 10px;
-     background-color: #3c396ebb;
+     background-color: #3f3b88bb;
     /* background-image: url("/images/grit.gif"); */
     margin-top: 25px;
 }
@@ -312,21 +312,21 @@ main article ul {
 }
 
 .se{
-    background-color:gray;
+    background-color:black;
     width: 100%;
 }
 .sse{
-    background-color:gray;
+    background-color:black;
     width: 100%;
 }
 
 .sf{
-    background-color:gray;
+    background-color:black;
     width: 100%;
 }
 
 .st{
-    background-color:gray;
+    background-color:black;
     width: 100%;
 }
 
@@ -355,7 +355,8 @@ main article ul {
     visibility: visible;
     color:white;
     text-shadow: #000000;
-    background-color: #826D7E;
+    /* background-color: #826D7E; */
+    background-color: #000000;
     pointer-events: none;   
 }
 
